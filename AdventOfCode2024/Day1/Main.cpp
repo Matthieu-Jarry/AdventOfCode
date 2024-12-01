@@ -1,11 +1,10 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include "triRapide.hpp"
 #include "Day1.hpp"
 
 using namespace std;
-using namespace TriRapide;
 
 int main() {
     string filename = "input.txt";
@@ -17,7 +16,7 @@ int main() {
 
     ifstream infile(filename);
     if (!infile) {
-        std::cerr << "Error: unable to open file " << filename << std::endl;
+        cerr << "Error: unable to open file " << filename << endl;
         return 1;
     }
 
@@ -28,8 +27,8 @@ int main() {
 
     infile.close();
 
-    quickSort(column1);
-    quickSort(column2);
+    sort(column1.begin(), column1.end());
+    sort(column2.begin(), column2.end());
 
     distance = Day1::distanceBetweenTwoVector(column1, column2);
     cout << "Distance between two columns : " << distance << endl;
