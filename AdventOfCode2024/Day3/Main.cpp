@@ -9,5 +9,7 @@ int main() {
 	cout << "In the corupted file " << filename << ", adding all multiplication have a total of " << addAllMultiplication << endl;
 	int addAllMultiplicationEnabled = Day3::addMultiplicationEnabledInCorruptedFile(filename);
 	cout << "In the corupted file " << filename << ", adding all enabled multiplication have a total of " << addAllMultiplicationEnabled << endl;
-	return 0;
+	
+	cin.ignore();
+	return EXIT_SUCCESS;
 }

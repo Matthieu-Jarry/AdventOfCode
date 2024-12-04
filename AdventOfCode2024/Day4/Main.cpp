@@ -10,5 +10,6 @@ int main() {
 	int nbCrossMAS = Day4::findCrossMASInFile(filename);
 	cout << nbCrossMAS << " Cross MAS find in the file " << filename << endl;
 
-	return 0;
+	cin.ignore();
+	return EXIT_SUCCESS;
 }

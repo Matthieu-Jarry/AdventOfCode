@@ -9,5 +9,7 @@ int main() {
 
 	int nbReportSafeRemoveOneBadLevel = Day2::getNbReportSafeRemoveOneBadLevelNotOptimize(filename);
 	cout << nbReportSafeRemoveOneBadLevel << " reports are safe with the Problem Dampener" << endl;
-	return 0;
+	
+	cin.ignore();
+	return EXIT_SUCCESS;
 }

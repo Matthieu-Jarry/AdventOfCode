@@ -36,5 +36,6 @@ int main() {
     similarityScore = Day1::similarityBetweenTwoVector(column1, column2);
     cout << "Similarity score between two columns : " << similarityScore << endl;
 
-    return EXIT_SUCCESS;
+	cin.ignore();
+	return EXIT_SUCCESS;
 }
